@@ -20,6 +20,7 @@ a{
     color: black;
 }
 
+/* -------------------------------HEADER------------------------------- */
 
 header {
     max-width: 1376px;
@@ -30,8 +31,6 @@ header {
     grid-template-columns: auto 6fr auto auto auto;
     grid-template-areas: "logo . nav1 nav2 button";
 }
-
-
 .logo{
     grid-area: logo;
 }
@@ -41,6 +40,8 @@ header {
     justify-self: center;
     color: black;
     border: 2px solid transparent;
+    color: #0065FC;
+    border-top-color: #0065FC;
 }
 .nav2 {
     padding: 32px;
@@ -62,6 +63,9 @@ header {
 }
 .register:hover{
     color: #f2f2f2;
+}
+.search_btn .fa-search {
+    display: none;
 }
 
 /* -------------------------------SEARCH------------------------------- */
@@ -103,10 +107,10 @@ header {
 
 /* -------------------------------FILTRE------------------------------- */
 
-
 .filtres{
     display: flex;
     flex-flow: wrap;
+    margin-top: 30px;
 }
 
 .filtres h3 {
@@ -115,26 +119,22 @@ header {
 }
 .ico-filtre{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
     flex-flow: wrap;
 }
-
 .icone{
     display: flex;
     align-items: center;
     border: #f2f2f2 solid 2px;
-    /* padding-right: 15px; */
+    padding-right: 15px;
     border-radius: 50px;
-    /* margin-left: 20px; */
     margin-right: 20px;
+    margin-bottom: 10px;
 }
-.ico-economie{
+.font{
     border: solid 2px transparent;
     border-radius: 50px;
-    background-color: #DEEBFF;
+    background-color: #deebff;
     font-weight: 600;
     padding: 3px;
     margin-right: 5px;
@@ -142,54 +142,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-}
-.ico-child{
-    border: solid 2px transparent;
-    border-radius: 50px;
-    background-color: #DEEBFF;
-    font-weight: 600;
-    padding: 4px 8px 4px 8px;
-    margin-right: 5px;
-    color: #0065FC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-}
-.ico-heart{
-    border: solid 2px transparent;
-    border-radius: 50px;
-    background-color: #DEEBFF;
-    font-weight: 600;
-    padding: 3px 7px 3px 7px;
-    margin-right: 5px;
-    color: #0065FC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-}
-.ico-pet{
-    border: solid 2px transparent;
-    border-radius: 50px;
-    background-color: #DEEBFF;
-    font-weight: 600;
-    padding: 3px;
-    margin-right: 5px;
-    color: #0065FC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-}
+    height: 2.4rem;
+    width: 2.4rem;
+} 
 .icone:hover{
     border: solid 2px #0065FC;
     color: #0065FC;
+    transform: scale(1.05);
 }
 .info{
     display: flex;
@@ -205,6 +164,7 @@ header {
 }
 
 /* -------------------------------MAIN------------------------------- */
+
 .main{
     display: flex;
     justify-content: space-between;
@@ -226,8 +186,8 @@ header {
     margin-bottom: 20px;
 }
 
-
 /* -------------------------------SECTION------------------------------- */
+
 .hebergement-reponse{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -235,13 +195,13 @@ header {
 }
 .h-box{
     background-color: white;
-    border-radius: 30px;
-    padding: 8px 8px 8px 8px;
+    border-radius: 1rem;
+    padding: 5px;
 }
 .hebergement-reponse img{
     height: 9rem;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 1rem 1rem 0px 0px;
     object-fit: cover;
 }
 .hebergement-reponse a:hover{
@@ -265,8 +225,9 @@ header {
 .p-box{
     display: flex;
     background-color: white;
-    border-radius: 30px;
-    padding: 8px 8px 8px 8px;
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1rem;
+    padding: 5px;
 }
 .p-box img{
     height: 9rem;
@@ -284,15 +245,15 @@ header {
 }
 .populaire-reponse img{
     height: 175px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 1rem 0px 0px 1rem;
 }    
 
 /* -------------------------------ACTIVITES------------------------------- */
+
 .activites{
     margin: 10px;
     padding: 10px;
 }
-
 .activities{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -311,20 +272,18 @@ header {
 }
 .a-box1 {
     grid-area: vp;
-    border: solid transparent;
-    box-shadow: 5px 2px 2px #f2f2f2;
+    box-shadow: 0 0 20px #0000002e;
     border-radius: 30px;
     text-align: center;
 }
 .a-box1 img{
     height: 475px;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .a-box2 {
     grid-area: fp;
-    border: solid transparent;
     box-shadow: 5px 2px 2px #f2f2f2;
     border-radius: 30px;
     text-align: center;
@@ -332,12 +291,11 @@ header {
 .a-box2 img{
     height: 235px;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .a-box3 {
     grid-area: pc;
-    border: solid transparent;
     box-shadow: 5px 2px 2px #f2f2f2;
     border-radius: 30px;
     text-align: center;
@@ -345,12 +303,11 @@ header {
 .a-box3 img{
     height: 475px;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .a-box4 {
     grid-area: nd;
-    border: solid transparent;
     box-shadow: 5px 2px 2px #f2f2f2;
     border-radius: 30px;
     text-align: center;
@@ -358,12 +315,11 @@ header {
 .a-box4 img{
     height: 150px;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .a-box5 {
     grid-area: if;
-    border: solid transparent;
     box-shadow: 5px 2px 2px #f2f2f2;
     border-radius: 30px;
     text-align: center;
@@ -371,12 +327,11 @@ header {
 .a-box5 img{
     height: 150px;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .a-box6 {
     grid-area: pl;
-    border: solid transparent;
     box-shadow: 5px 2px 2px #f2f2f2;
     border-radius: 30px;
     text-align: center;
@@ -384,13 +339,12 @@ header {
 .a-box6 img{
     height: 235px;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 .activities a:hover{
     transform: scale(1.05);
 }
-
 
 /* -------------------------------FOOTER------------------------------- */
 
@@ -406,6 +360,7 @@ footer a:hover{
 }
 
 /* -------------------------------MEDIA------------------------------- */
+
 @media (max-width: 1300px){
     .main{
         display: flex;
@@ -432,22 +387,60 @@ footer a:hover{
         "pc pc pl pl"
         "pc pc pl pl";
     }
+    .a-box1 img{
+        height: 610px;
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+        object-fit: cover;
+    }
+    .a-box3 img{
+        height: 540px;
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+        object-fit: cover;
+    }
+    .a-box2 img{
+        height: 290px;
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+        object-fit: cover;
+    }
+    .a-box4 img{
+        height: 170px;
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+        object-fit: cover;
+    }
+    .a-box5 img{
+        height: 165px;
+        width: 100%;
+        border-radius: 30px 30px 0px 0px;
+        object-fit: cover;
+    }
 }
 @media (max-width: 760px){
     .filtres{
         display: flex;
         /* flex-direction: column; */
     }
+    .populaire{
+        margin: 0px;
+        border-radius: 0px;
+    }
     .hebergement{
         display: flex;
         flex-direction: column;
+        background-color: transparent;
+    }
+    .h-box{
+        box-shadow: 0px 0px 16px #0000002e;
     }
     .hebergement-reponse{
         display: flex;
         flex-direction: column;
     }
     .hebergement-reponse img{
-        height: 18rem;
+        height: 10rem;
         width: 100%;
     }
     .activities{
@@ -455,37 +448,37 @@ footer a:hover{
         flex-direction: column;
     }
     .a-box1 img{
-        height: 18rem;
+        height: 10rem;
         width: 100%;
-        border-radius: 15px 15px 15px 15px;
+        border-radius: 15px 15px 0px 0px;
         object-fit: cover;
     }
     .a-box2 img{
-        height: 18rem;
+        height: 10rem;
         width: 100%;
         border-radius: 15px 15px 15px 15px;
         object-fit: cover;
     }
     .a-box3 img{
-        height: 18rem;
+        height: 10rem;
         width: 100%;
         border-radius: 15px 15px 15px 15px;
         object-fit: cover;
     }
     .a-box4 img{
-        height: 18rem;
+        height: 10rem;
         width: 100%;
         border-radius: 15px 15px 15px 15px;
         object-fit: cover;
     }
     .a-box5 img{
-        height: 18rem;
+        height: 10rem;
         width: 100%;
         border-radius: 15px 15px 15px 15px;
         object-fit: cover;
     }
     .a-box6 img{
-        height: 18rem;
+        height: 10rem;
         width: 100%;
         border-radius: 15px 15px 15px 15px;
         object-fit: cover;
@@ -502,9 +495,11 @@ footer a:hover{
         column-gap: 2rem;
         grid-template-areas:
         "aa bb"
-        "cc dd"
+        "cc dd";
+        padding: 0px;
     }
     .logo{
+        padding-left: 32px;
         grid-area: aa;
     }
     .register{
@@ -512,6 +507,9 @@ footer a:hover{
     }
     .nav1{
         grid-area: cc;
+        color: #0065FC;
+        border-bottom-color: #0065FC;
+        border-top-color: transparent;
     }
     .nav2{
         grid-area: dd;
@@ -519,6 +517,27 @@ footer a:hover{
     .nav1:hover, .nav2:hover{
     color: #0065FC;
     border-bottom-color: #0065FC;
-    border-top-color: none;
+    border-top-color: transparent;
+    }
+    .search_btn span {
+        display: none
+    }
+    .search_btn .fa-search {
+        display: block;
+    }
+    .rechercher {
+        padding-right: 15px;
+    }
+    #search {
+        width: 100%;
+    }
+    .search button {
+        margin-left: -25px;
+        border-radius: 15px;
+        width: 60px;
+    }
+    .a-box h4 {
+        text-align: left;
+        margin: 20px 24px;
     }
 }
