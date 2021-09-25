@@ -197,6 +197,7 @@ header {
     background-color: white;
     border-radius: 1rem;
     padding: 5px;
+    max-width: 322px;
 }
 .hebergement-reponse img{
     height: 9rem;
@@ -274,7 +275,7 @@ header {
     grid-area: vp;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 30px;
-    text-align: center;
+    
 }
 .a-box1 img{
     height: 475px;
@@ -286,7 +287,7 @@ header {
     grid-area: fp;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 30px;
-    text-align: center;
+    
 }
 .a-box2 img{
     height: 235px;
@@ -298,7 +299,7 @@ header {
     grid-area: pc;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 30px;
-    text-align: center;
+    
 }
 .a-box3 img{
     height: 475px;
@@ -310,7 +311,7 @@ header {
     grid-area: nd;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 30px;
-    text-align: center;
+    
 }
 .a-box4 img{
     height: 150px;
@@ -322,7 +323,7 @@ header {
     grid-area: if;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 30px;
-    text-align: center;
+    
 }
 .a-box5 img{
     height: 150px;
@@ -334,13 +335,17 @@ header {
     grid-area: pl;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 30px;
-    text-align: center;
+    
 }
 .a-box6 img{
     height: 235px;
     width: 100%;
     border-radius: 1rem 1rem 0px 0px;
     object-fit: cover;
+}
+
+.a-box h4 {
+    padding-left: 20px;
 }
 .activities a:hover{
     transform: scale(1.05);
@@ -448,6 +453,7 @@ footer a:hover{
     }
     .h-box{
         box-shadow: 0px 0px 16px #0000002e;
+        margin: auto;
     }
     .hebergement-reponse{
         display: flex;
