@@ -176,7 +176,16 @@ header {
     padding: 20px 20px 20px 20px;
 }
 .bed-rating{
+    display: flex;
     color: #0065FC;
+}
+.bed-rating-p{
+    margin-top: 70px;
+    color: #0065FC;
+    display: flex;
+}
+.greystar{
+    color: #F2F2F2;
 }
 .section{
     display: flex;
@@ -197,7 +206,7 @@ header {
     background-color: white;
     border-radius: 1rem;
     padding: 5px;
-    max-width: 322px;
+    max-width: 510px;
 }
 .hebergement-reponse img{
     height: 9rem;
@@ -527,12 +536,14 @@ footer a:hover{
     }
     .nav1{
         grid-area: cc;
-        color: #0065FC;
         border-bottom-color: #0065FC;
         border-top-color: transparent;
+        min-width: 85%;
     }
     .nav2{
         grid-area: dd;
+        border-bottom-color: #F2F2F2;
+        min-width: 60%;
     }
     .nav1:hover, .nav2:hover{
     color: #0065FC;
