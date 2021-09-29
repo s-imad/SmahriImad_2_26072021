@@ -473,14 +473,6 @@ footer a:hover{
         display: flex;
         flex-direction: column;
     }
-    .hebergement-reponse img{
-        height: 10rem;
-        width: 100%;
-    }
-    /*.activities{
-        display: flex;
-        flex-direction: column;
-    }*/
     .a-box1 img{
         height: 10rem;
         width: 100%;
